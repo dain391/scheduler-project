@@ -1,1 +1,1 @@
-# scheduler-project
+# SchedulerProject

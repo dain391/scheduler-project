@@ -3,7 +3,7 @@ spring:
     name: SchedulerProject
 # 데이터 소스 설정
   datasource:
-    url: jdbc:mysql://localhost:3306/memo
+    url: jdbc:mysql://localhost:3306/schedule
     username: root
     password: ekdls0901
     driver-class-name: com.mysql.cj.jdbc.Driver

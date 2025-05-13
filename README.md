@@ -16,21 +16,20 @@
 ## ERD
 ```mermaid
 erDiagram
-USER ||--o{ SCHEDULE : contains
+USER ||--o{ SCHEDULE : writes
 USER {
     bigInt userId PK
     varchar(100) email
     varchar(100) userName
-    datetime createAt
-    datetime updateAt
+    datetime createdAt
+    datetime updatedAt
 }
 SCHEDULE {
-    bigInt scheduledId PK
-    bigInt userId FK
+    bigInt id PK
     varchar(100) title
-    varchar(255) content
+    varchar(50) userName
     varchar(255) password
-    datetime createAt
-    datetime updateAt
+    datetime createdAt
+    datetime modifiedAt
 }
 ```
